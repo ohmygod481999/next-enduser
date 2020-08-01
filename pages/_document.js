@@ -1,0 +1,223 @@
+import Document, { Html, Head, Main, NextScript } from "next/document";
+// import Configuration from "../config";
+// import favicon from "../public/images/favicon.ico";
+
+class MyDocument extends Document {
+    static async getInitialProps(ctx) {
+        const initialProps = await Document.getInitialProps(ctx);
+        return { ...initialProps };
+    }
+
+    state = {};
+
+    render() {
+        return (
+            <Html>
+                <Head>
+                    <link
+                        rel="shortcut icon"
+                        href="http://127.0.0.1:5500/images/favicon.png"
+                    />
+                    <link
+                        rel="apple-touch-icon"
+                        href="http://127.0.0.1:5500/images/apple-touch-icon-57x57.png"
+                    />
+                    <link
+                        rel="apple-touch-icon"
+                        sizes="72x72"
+                        href="http://127.0.0.1:5500/images/apple-touch-icon-72x72.png"
+                    />
+                    <link
+                        rel="apple-touch-icon"
+                        sizes="114x114"
+                        href="http://127.0.0.1:5500/images/apple-touch-icon-114x114.png"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/animate.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/bootstrap.min.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/et-line-icons.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/font-awesome.min.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/themify-icons.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/swiper.min.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/justified-gallery.min.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/magnific-popup.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="http://127.0.0.1:5500/revolution/css/settings.css"
+                        media="screen"
+                    />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="http://127.0.0.1:5500/revolution/css/layers.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="http://127.0.0.1:5500/revolution/css/navigation.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/bootsnav.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/style.css"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="http://127.0.0.1:5500/css/responsive.css"
+                    />
+                </Head>
+
+                <body>
+                    <Main />
+
+                    <NextScript />
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/modernizr.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/bootstrap.bundle.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.easing.1.3.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/skrollr.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/smooth-scroll.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.appear.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/bootsnav.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.nav.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/wow.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/page-scroll.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/swiper.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.count-to.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.stellar.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.magnific-popup.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/isotope.pkgd.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/imagesloaded.pkgd.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/classie.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/hamburger-menu.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/counter.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.fitvids.js"
+                    ></script>
+
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/skill.bars.jquery.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/justified-gallery.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/jquery.easypiechart.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/instafeed.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/retina.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/revolution/js/jquery.themepunch.tools.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/revolution/js/jquery.themepunch.revolution.min.js"
+                    ></script>
+                    <script
+                        type="text/javascript"
+                        src="http://127.0.0.1:5500/js/main.js"
+                    ></script>
+                </body>
+            </Html>
+        );
+    }
+}
+export default MyDocument;
